@@ -1,7 +1,6 @@
 package List
 
-type Object interface {}
-
+type Object interface{}
 
 type linkedlistnode struct {
 	data Object
@@ -11,8 +10,3 @@ type linkedlistnode struct {
 type LinkedList struct {
 	head *linkedlistnode
 }
-
-
-
-
-
