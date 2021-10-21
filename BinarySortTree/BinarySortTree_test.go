@@ -6,7 +6,7 @@ import (
 
 func Test(t *testing.T) {
 	values := []int{3, 6, 8, 20, 9, 2, 6, 8, 9, 3, 5, 40, 7, 9, 13, 6, 8}
-	tree:=NewTree()
+	tree:=NewBinarySortTree()
 	for _,value := range values{
 		tree.Add(value)
 	}
