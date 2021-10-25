@@ -7,6 +7,10 @@ type HeapData interface {
 	Push(interface{})
 	Pop() interface{}
 }
+
+/*假设结点的下标为i，那么它的左孩子结点的下标就是2i + 1，右孩子结点的下标就是2i + 2，它的父结点为(i−1)/2*/
+
+
 func Init(data HeapData ){
 	//如果左右子树满足堆，则根节点直接和左右子树较大或者较小的交换即可满足堆的定义
 	//自下而上，每个根节点下沉
