@@ -34,11 +34,7 @@ func insertDescSort(arr []int) []int {
 	return res
 }
 func Reverse(slice interface{}){
-	s := reflect.ValueOf(slice)
-	// if s is a pointer of slice
-	if s.Kind() == reflect.Ptr {
-		s = s.Elem()
-	}
+	s := reflect.Indirect(reflect.ValueOf(slice))
 	i := 0
 	j := s.Len() - 1
 	for i < j {

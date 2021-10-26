@@ -6,8 +6,9 @@ import (
 )
 
 func TestAscSort(t *testing.T) {
-	arr := []int{5,3,6,1,1,9}
-	sort := InsertSort(arr,Desc)
+	arr := []int{9,3,6,1,1,44,19,0}
+	sort := RadixSort(arr,Asc)
 	fmt.Println(arr)
 	fmt.Println(sort)
+
 }
